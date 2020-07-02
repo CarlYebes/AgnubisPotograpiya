@@ -4,7 +4,6 @@ from .models import picture
 
 def home(request):
     pictures = picture.objects.all()
-    print(pictures)
     context = {
         'pictures': pictures
     }

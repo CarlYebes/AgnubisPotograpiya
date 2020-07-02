@@ -1,5 +1,9 @@
 from django.db import models
 
+# Deletes the image when data in database is deleted
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
+
 # Create your models here.
 
 class picture(models.Model):
@@ -9,3 +13,9 @@ class picture(models.Model):
 
     def __str__(self):
         return self.title
+
+
+# Deletes the image when data in database is deleted
+@receiver(post_delete, sender=picture)
+def submission_delete(sender, instance, **kwargs):
+    instance.image.delete(False)
