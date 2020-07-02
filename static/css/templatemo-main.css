@@ -8,6 +8,16 @@
     opacity: 0;
   }
 }
+#contact-page {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 10px ;
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	margin-top: 45px;
+}
 
 .seq-preloader {
   background: white;
@@ -323,8 +333,8 @@ nav a:hover::before {
 }
 
 .first-content .author-image img {
-	margin-top: 15px;
-	border-radius: 30px;
+	margin-top: 20px;
+	border-radius: 10px;
 	max-width: 100%;
 	overflow: hidden;
 	float: left;
@@ -605,8 +615,7 @@ nav a:hover::before {
 
 .fourth-content .item .hover-effect p {
 	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	letter-spacing:0.5px;
 	line-height: 22px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
@@ -770,7 +779,6 @@ nav a:hover::before {
 
 	nav {
 		width: 15vh;
-		height: 85vh;
 	}
 	nav .logo {
 		display: none;
