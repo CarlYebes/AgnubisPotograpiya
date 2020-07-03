@@ -8,6 +8,14 @@
     opacity: 0;
   }
 }
+#contact-padding {
+	padding-left: 24px;
+}
+
+#work-padding {
+	padding-left: 28px;
+}
+
 #contact-page {
 	border-bottom: 2px solid #fff;
 	padding-bottom: 10px ;
@@ -183,9 +191,6 @@ nav em {
 	font-size: 14px;
 }
 
-nav ul li i {
-	width: 25px;
-}
 
 nav ul li a {
 	font-size: 18px;
@@ -772,10 +777,16 @@ nav a:hover::before {
 	.fifth-content #contact {
 		padding: 30px 30px 30px 30px;
 	}
+	#work-padding {
+		padding-left: 29px;
+	}
 
+	#contact-padding {
+		padding-left: 27px;
+	}
 }
 
-@media (max-width: 749px) {
+@media (max-width: 814px) {
 
 	nav {
 		width: 15vh;
@@ -792,6 +803,7 @@ nav a:hover::before {
 	nav ul {
 		text-align: center;
 		margin-left: 0px;
+		margin-top: 30px;
 	}
 
 
@@ -836,7 +848,7 @@ nav a:hover::before {
 
 }
 
-@media(max-width: 450px) {
+@media(max-width: 536px) {
 
 	nav ul {
 		margin-top: 30px;
@@ -846,5 +858,15 @@ nav a:hover::before {
 	}
 	nav a {
 	  	padding: 15px 20px;
+	}
+	#work-padding{
+		padding-left: 18px;
+	}
+	#contact-padding {
+		padding-left: 18px;
+	}
+	.first-content h2 {
+		font-size: 27px;
+		margin-right: 10px;
 	}
 }
