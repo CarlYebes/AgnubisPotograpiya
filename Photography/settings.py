@@ -129,3 +129,11 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/uploadimages')
 
 MEDIA_URL = 'static/uploadimages/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'yebes77@gmail.com'
+EMAIL_HOST_PASSWORD = 'Yebes!123'
+EMAIL_USE_TLS = True
