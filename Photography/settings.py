@@ -27,7 +27,7 @@ SECRET_KEY = '(!kh^p5txh$uqp4kp1u(6519ujk6gim9h^)izfe8)!qzs@ih24'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Photography.urls'
@@ -143,3 +144,5 @@ EMAIL_HOST_PASSWORD = 'Yebes!123'
 EMAIL_USE_TLS = True
 
 django_heroku.settings(locals())
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'

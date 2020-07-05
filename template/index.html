@@ -94,14 +94,14 @@
                         <div class="column" id="image-column">
                             <div class="item">
                                 <div class="thumb">
-                                    <a  href="{{ picture.image }}" data-lightbox="image-1"><div class="hover-effect">
+                                    <a  href="{{ picture.image.url }}" data-lightbox="image-1"><div class="hover-effect">
                                         <div class="hover-content">
                                             <h2>{{ picture.title }}</h2>
                                             <p>{{ picture.description }}</p>
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="{{ picture.image }}">
+                                        <img src="{{ picture.image.url }}">
                                     </div>
                                 </div>
                             </div>
