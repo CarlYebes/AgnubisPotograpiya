@@ -131,9 +131,9 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/uploadimages')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploadimages')
 
-MEDIA_URL = 'static/uploadimages/'
+MEDIA_URL = '/uploadimages/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
